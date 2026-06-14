@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  redis-m1:
+    image: redis:7.2-alpine
+    container_name: redis-m1
+    command: redis-server --port 6379 --cluster-enabled yes --appendonly yes
+    networks:
+      - redis-net
+
+  redis-m2:
+    image: redis:7.2-alpine
+    container_name: redis-m2
+    command: redis-server --port 6379 --cluster-enabled yes --appendonly yes
+    networks:
+      - redis-net
+
+  redis-m3:
+    image: redis:7.2-alpine
+    container_name: redis-m3
+    command: redis-server --port 6379 --cluster-enabled yes --appendonly yes
+    networks:
+      - redis-net
+
+  redis-r1:
+    image: redis:7.2-alpine
+    container_name: redis-r1
+    command: redis-server --port 6379 --cluster-enabled yes --appendonly yes
+    networks:
+      - redis-net
+
+  redis-r2:
+    image: redis:7.2-alpine
+    container_name: redis-r2
+    command: redis-server --port 6379 --cluster-enabled yes --appendonly yes
+    networks:
+      - redis-net
+
+  redis-r3:
+    image: redis:7.2-alpine
+    container_name: redis-r3
+    command: redis-server --port 6379 --cluster-enabled yes --appendonly yes
+    networks:
+      - redis-net
+
+networks:
+  redis-net:
+    driver: bridge
