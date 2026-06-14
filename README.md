@@ -74,8 +74,8 @@ docker exec -it redis-r3 redis-cli get session:user:bob
 docker exec -it redis-m1 redis-cli --cluster check redis-m1:6379
 
 
-![alt text](https://github.com/SLzDevOps/netology-microservice-2/blob/main/screens/Screenshot_904.png).
-![alt text](https://github.com/SLzDevOps/netology-microservice-2/blob/main/screens/Screenshot_906.png).
+![alt text](https://github.com/SLzDevOps/netology-microservice-4/blob/main/Screenshot_916.png).
+![alt text](https://github.com/SLzDevOps/netology-microservice-4/blob/main/Screenshot_917.png).
 
 
 
